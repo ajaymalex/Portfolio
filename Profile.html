@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio - AJAY M ALEX</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69b92d3eba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header" role="banner">
+        <div class="container">
+            <nav role="navigation" aria-label="Main navigation">
+                <h1 class="header-title">AJAY M ALEX</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#portfolio">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <button aria-label="Close menu" class="menu-close" onclick="closemenu()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </li>
+                </ul>
+                <button aria-label="Open menu" class="menu-open" onclick="openmenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+            <div class="header-text">
+                <h2>Full Stack Developer</h2>
+                <p>Email: <a href="mailto:ajaymalex282002@gmail.com">ajaymalex282002@gmail.com</a><br>
+                    Phone: <a href="tel:+919626016128">9626016128</a></p>
+                <a href="https://www.linkedin.com/in/ajay-m-alex" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="PHOTO/WhatsApp Image 2024-10-01 at 5.37.28 PM.jpeg" alt="Photo of AJAY M ALEX in a professional setting">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I recently graduated with a B.Tech in Information Technology and am eager to begin my career. With hands-on experience in full-stack development, Flutter engineering, and UI/UX design, I am confident my skills align with this role. I am also a Microsoft AI Skill Challenger, Oracle Certified, and an NCC Cadet. Highly motivated and quick to learn, I look forward to contributing to your team.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>Flutter</span><br>Building Android Apps</li>
+                            <li><span>UI/UX</span><br>Designing Web Interfaces</li>
+                            <li><span>Data Structures and Algorithms</span><br>Algorithms + Data Structures = Programs</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Accent Technosoft - Web Development Intern - Dec 2021</span><br>Developed and maintained websites. Improved site performance. Fixed website issues.</li>
+                            <li><span>Accent Technosoft - Android App Development Intern - Dec 2022</span><br>Built Android Apps.</li>
+                            <li><span>Cattleguru Private Limited - Mobile App Development Intern</span><br>Secured internship through Internshala.</li>
+                            <li><span>SNS Square - UI/UX - Nov 2023</span><br>UI/UX Concepts and Figma Basics.</li>
+                            <li><span>NCS Partners - Sept 2024</span><br>Supply Chain Management.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.Tech in Information Technology</span><br>Graduated in 2024 - 8.75 CGPA.</li>
+                            <li><span>HSC</span><br>Completed in 2020 - 75%.</li>
+                            <li><span>SSLC</span><br>Completed in 2018 - 90%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-regular fa-hand"></i>
+                    <h2>Hand Gesture Recognition - Generative AI</h2>
+                    <p>Used ANN Algorithms with Python and OpenCV.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-building"></i>
+                    <h2>Hotel Reservation Platform</h2>
+                    <p>Developed a web-based system for booking hotel rooms. Designed and implemented the user interface. Integrated booking functionalities and payment systems.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-file-video"></i>
+                    <h2>Media Streaming Platform</h2>
+                    <p>The project aims to develop a comprehensive online application that allows users to stream videos on demand, offering a wide range of content such as movies, TV shows, and more.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Certifications</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="PHOTO/WhatsApp Image 2024-10-03 at 10.41.44 AM.jpeg" alt="Google Digital Unlocked Certification Image">
+                    <div class="layer">
+                        <h3>Google Digital Unlocked</h3>
+                        <p>Fundamentals of Digital Marketing</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="PHOTO/WhatsApp Image 2024-10-03 at 10.41.45 AM (1).jpeg" alt="NCC C Certificate Image">
+                    <div class="layer">
+                        <h3>NCC C Certificate</h3>
+                        <p>Achieved 'A' Grade.</p>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="PHOTO/WhatsApp Image 2024-10-03 at 10.41.45 AM.jpeg" alt="Oracle Certified Foundations Image">
+                    <div class="layer">
+                        <h3>Oracle Certified Foundations</h3>
+                        <p>Oracle Certified.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </section>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i> <a href="mailto:ajaymalex282002@gmail.com">ajaymalex282002@gmail.com</a></p>
+                    <p><i class="fa-solid fa-phone"></i> <a href="tel:+919626016128">9626016128</a></p>
+                    <div class="social-icons">
+                        <a href="https://m.facebook.com/100095152662168/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ajay_m_alex?igsh=MWE4OXN2c3dnZjFzdg==" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ajay-m-alex?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@aj_universe_5962" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="PHOTO/-RESUME- (1).pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="submit-to-google-sheet" method="post" name="submit-to-google-sheet">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright &copy; 2024 AJAY M ALEX. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(event, tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            document.getElementById(tabname).classList.add("active-tab");
+            event.currentTarget.classList.add("active-link");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyj_vadAe21eU579hC-KFN4TgDtmp2Dn8d0wZzQO0qKRKLkzgghN_mFmzvYgU7jia1b/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
